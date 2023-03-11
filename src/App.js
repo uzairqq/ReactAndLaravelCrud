@@ -14,6 +14,11 @@ function App() {
               Home
             </Link>
           </li>
+          <li className="nav-item">
+            <Link to={"/create"} className="nav-link">
+              Create
+            </Link>
+          </li>
         </div>
       </nav>
       <div className="container">
