@@ -1,6 +1,7 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Link } from "react-router-dom";
+import { Routes, Route, Link } from "react-router-dom";
+import Home from "./Pages/HomeComponent";
 
 function App() {
   return (
@@ -14,6 +15,12 @@ function App() {
           </li>
         </div>
       </nav>
+      <div className="container">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          
+        </Routes>
+      </div>
     </div>
   );
 }
