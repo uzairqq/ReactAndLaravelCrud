@@ -2,6 +2,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Routes, Route, Link } from "react-router-dom";
 import Home from "./Pages/HomeComponent";
+import CreateComponent from "./pages/CreateComponent";
 
 function App() {
   return (
@@ -18,7 +19,7 @@ function App() {
       <div className="container">
         <Routes>
           <Route path="/" element={<Home />} />
-          
+          <Route path="/create" element={<CreateComponent />} />
         </Routes>
       </div>
     </div>
